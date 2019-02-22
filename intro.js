@@ -1058,7 +1058,7 @@
       // scroll to element
       scrollParent = _getScrollParent( targetElement.element );
 
-      if (scrollParent !== document.body) {
+      if (scrollParent !== document.body && scrollParent !== document.documentElement) {
         // target is within a scrollable element
         _scrollParentToElement(scrollParent, targetElement.element);
       }
@@ -1134,7 +1134,7 @@
       // scroll to element
       scrollParent = _getScrollParent( targetElement.element );
 
-      if (scrollParent !== document.body) {
+      if (scrollParent !== document.body && scrollParent !== document.documentElement) {
         // target is within a scrollable element
         _scrollParentToElement(scrollParent, targetElement.element);
       }
